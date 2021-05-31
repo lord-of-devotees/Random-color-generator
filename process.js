@@ -28,6 +28,24 @@
       		console.log("changed color value code = " + color);
       		document.body.style.backgroundColor = color;
     		console.log(document.body.style.backgroundColor);
+    		let result = ntc.name(color); 
+		let specific_name = result[1];
+		
+		let rgb_value = result[0];      // #6495ed         : RGB value of closest match
+		let is_exact_match = result[2]; // false           : True if exact color match
+		console.log("specific="+specific_name);
+		console.log("val="+is_exact_match);
+		if(specific_name=="Black"||specific_name=="White")
+		{
+			console.log("Entered in black white");
+			if(color!="#FFFFFF" && color!="#ffffff" && color!="#000000")
+			document.getElementById("color-name").value = "Dont have valid name";
+			else
+			document.getElementById("color-name").value=specific_name;
+    		}
+    		else
+    		document.getElementById("color-name").value=specific_name;
+    		
     		}
     		
     		});
@@ -38,6 +56,7 @@
       		console.log("changed color value name = " + color);
       		document.body.style.backgroundColor = color;
       		console.log(document.body.style.backgroundColor);
+		document.getElementById("color-code").value= color;
     		}
     		});
 
