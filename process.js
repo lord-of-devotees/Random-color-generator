@@ -56,7 +56,10 @@
       		console.log("changed color value name = " + color);
       		document.body.style.backgroundColor = color;
       		console.log(document.body.style.backgroundColor);
+      		if(color==document.body.style.backgroundColor)
       		document.getElementById("color-code").value= color;
+      		else
+      		document.getElementById("color-code").value= "Invalid Color Name";
     		}
     		});
 
