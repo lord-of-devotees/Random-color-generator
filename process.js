@@ -12,9 +12,9 @@
 		document.getElementById("color-code").value=cllr;
 		let result = ntc.name(cllr);
 
-		let rgb_value = result[0];      // #6495ed         : RGB value of closest match
-		let specific_name = result[1];  // Cornflower Blue : Color name of closest match
-		let is_exact_match = result[2]; // false           : True if exact color match
+		let rgb_value = result[0];      //  RGB value of closest match
+		let specific_name = result[1];  //  Color name of closest match
+		let is_exact_match = result[2]; // True if exact color match
 		console.log("val="+rgb_value);
 		console.log("specific="+specific_name);
 		console.log("val="+is_exact_match);
@@ -56,8 +56,7 @@
       		console.log("changed color value name = " + color);
       		document.body.style.backgroundColor = color;
       		console.log(document.body.style.backgroundColor);
-		document.getElementById("color-code").value= color;
+      		document.getElementById("color-code").value= color;
     		}
     		});
-
 
