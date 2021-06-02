@@ -43,8 +43,12 @@
   	border-radius: 50%;
   	border: 1px solid red;
 	}
-	#data, #data1 {
-	padding-top: 50%;
+	#maain {
+	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: center;
 	}
 	#svg1, #svg2 {
 	color: green;
