@@ -1,4 +1,4 @@
-.text{
+	.text{
   	position:relative;
 	}
 	.text:before{
@@ -43,7 +43,7 @@
   	border-radius: 50%;
   	border: 1px solid red;
 	}
-	#maain {
+	#xxx {
 	min-height: 100vh;
     	display: flex;
     	flex-direction: column;
@@ -53,4 +53,3 @@
 	#svg1, #svg2 {
 	color: green;
 	}
-	
